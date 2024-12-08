@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PreyCharacter : Character
+public abstract class PlayerEnt : Entity
 {
     protected override void Awake()
     {
@@ -14,6 +14,8 @@ public class PreyCharacter : Character
     }
     protected override void Update()
     {
+        PlayerState pState = (PlayerState)sM.currentState;
+        pState.InputUpdate(); //I feel like there's a cleaner way to call this instead of casting it in an variable first, but if it works, it works! :P
         base.Update();
     }
     protected override void FixedUpdate()

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PredCharacter : Character
+public class PredEnt : Entity
 {
     protected override void Awake()
     {

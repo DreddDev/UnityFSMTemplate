@@ -1,8 +1,8 @@
 public abstract class PreyState : State
 {
-    public PreyCharacter preyChara;
-    public PreyState(PreyCharacter _preyChara, StateMachine _sM) : base((Character)_preyChara, _sM)
+    public PreyEnt preyEnt;
+    public PreyState(PreyEnt _preyChara, StateMachine _sM) : base((Entity)_preyChara, _sM)
     {
-        preyChara = _preyChara;
+        preyEnt = _preyChara;
     }
 }

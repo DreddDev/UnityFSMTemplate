@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Character : MonoBehaviour
+public abstract class Entity : MonoBehaviour
 {
     public StateMachine sM;
     protected virtual void Awake()
@@ -13,7 +13,6 @@ public abstract class Character : MonoBehaviour
     }
     protected virtual void Update()
     {
-        sM.currentState.HandleInput();
         sM.currentState.LogicUpdate();
     }
     protected virtual void FixedUpdate()

@@ -1,18 +1,14 @@
 public abstract class State
 {
-    public Character chara;
+    public Entity ent;
     public StateMachine sM;
 
-    public State(Character _chara, StateMachine _sM)
+    public State(Entity _ent, StateMachine _sM)
     {
-        chara = _chara;
+        ent = _ent;
         sM = _sM;
     }
     public virtual void Enter()
-    {
-
-    }
-    public virtual void HandleInput()
     {
 
     }
