@@ -15,7 +15,7 @@ public abstract class PlayerEnt : Entity
     protected override void Update()
     {
         PlayerState pState = (PlayerState)sM.currentState;
-        pState.InputUpdate(); //I feel like there's a cleaner way to call this instead of casting it in an variable first, but if it works, it works! :P
+        pState.InputUpdate();
         base.Update();
     }
     protected override void FixedUpdate()
